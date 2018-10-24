@@ -69,3 +69,48 @@ nav li a {
 nav li a:hover {
     color: #FFFBBD;
 }
+
+.row1{
+  //clear:both;
+}
+
+.myPhoto{
+    float: left;
+    display: block;
+    margin: 20px 20px 20px 40px;
+    width: 30%;
+}
+
+.balloons{
+    float:left;
+    display: block;
+    margin: 20px 40px 20px 20px;
+    width: 30%;
+    height: 600px;
+}
+
+.homeText{
+  float: left;
+  background-color: #3C352A;
+  margin-top: 20px;
+  padding: 0 10px 30px 10px;
+  width: 28%;
+  height: 100%;
+}
+
+#name{
+  color: #EDDEA4;
+  text-align: center;
+  text-transform: uppercase;
+  font-size: 40px;
+  font-family: 'Quicksand', sans-serif;
+}
+
+.intro{
+  color: #EDDEA4;
+  text-align: left;
+  font-size: 20px;
+  font-family: 'Quicksand', sans-serif;
+  margin: 0;
+  list-style-type: none;
+}
