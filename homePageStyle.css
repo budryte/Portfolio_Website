@@ -1,0 +1,71 @@
+
+/*font-family: 'Space Mono', monospace;
+font-family: 'Nanum Gothic', sans-serif;
+font-family: 'Quicksand', sans-serif;
+font-family: 'Kodchasan', sans-serif;
+font-family: 'Pacifico', cursive;
+font-family: 'Source Code Pro', monospace;*/
+
+body{
+  margin: 0;
+  background-color: #E6CC90;
+}
+
+.navbar{
+  width: 100%;
+  margin: 0;
+}
+
+header{
+  background-color: #3C352A;
+}
+
+header::after{
+  content: "";
+  display: flex;
+  clear: both;
+}
+
+#MyName{
+  float: left;
+  display: block;
+  color: #EDDEA4;
+  font-size: 28px;
+  font-family: 'Quicksand', sans-serif;
+  text-transform: uppercase;
+  padding-left: 40px;
+  padding-top: 8px;
+  margin: auto;
+}
+
+nav{
+  float: right;
+}
+
+nav ul{
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    height: 50px;
+    margin-right: 40px;
+}
+
+nav li{
+  display: inline-block;
+  position: relative;
+}
+
+nav li a {
+    display: block;
+    color: #EDDEA4;
+    text-align: center;
+    font-family: 'Quicksand', sans-serif;
+    padding: 14px 10px;
+    text-decoration: none;
+    text-transform: uppercase;
+}
+
+nav li a:hover {
+    color: #FFFBBD;
+}
