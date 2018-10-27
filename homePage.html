@@ -4,25 +4,28 @@
     <meta charset="utf-8">
     <title>My Home Page</title>
     <link rel="stylesheet" href="homePageStyle.css">
+    <link href="http://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
     <style>
 @import url('https://fonts.googleapis.com/css?family=Kodchasan|Nanum+Gothic|Pacifico|Quicksand|Source+Code+Pro|Space+Mono');
 </style>
   </head>
   <body>
+
     <header>
       <div class="navbar">
         <p id="MyName">Emilija Budrytė</p>
         <nav>
           <ul>
-            <li><a href="#">Home</a></li>
-            <li><a href="#">CV</a></li>
-            <li><a href="#">My Projects</a></li>
-            <li><a href="#">Contact</a></li>
-            <li><a href="#">Additional</a></li>
+            <li><a class="acitive" href="homePage.html">Home</a></li>
+            <li><a class="acitive" onkeyup=""href="CVpage.html">My CV</a></li>
+            <li><a class="acitive" href="projectPage.html">Projects</a></li>
+            <li><a class="acitive" onkeyup=""href="contactPage.html">Contact</a></li>
+            <li><a class="acitive" href="#">Additional</a></li>
           </ul>
         </nav>
       </div>
     </header>
+
     <main>
       <div class="row1">
         <section>
@@ -39,8 +42,16 @@
         </section>
       </div>
     </main>
-    <footer>
-    </footer>
-  </body>
 
+    <footer class="footerBox">
+      <div class="footer">
+        <ul>
+          <li><a href="#"><i class="fa fa-facebook-square fa-2x"></i></a></li>
+          <li><a href="#"><i class="fa fa-instagram fa-2x"></i></a></li>
+          <li><a href="#"><i class="fa fa-github fa-2x"></i></a></li>
+        </ul>
+      </div>
+    </footer>
+
+  </body>
 </html>
