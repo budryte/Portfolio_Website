@@ -3,32 +3,33 @@
   <head>
     <meta charset="utf-8">
     <title>CV page</title>
-    <link rel="stylesheet" href="cvPage.css">
+    <link rel="stylesheet" href="cvPageStyle.css">
       <link href="http://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
     <style>
 @import url('https://fonts.googleapis.com/css?family=Kodchasan|Nanum+Gothic|Pacifico|Quicksand|Source+Code+Pro|Space+Mono');
 </style>
+<script src="script.js"></script>
   </head>
   <body>
 
     <header>
-      <div class="navbar">
-        <p id="MyName">Emilija Budrytė</p>
         <nav>
-          <ul>
-            <li><a class="acitive" href="homePage.html">Home</a></li>
-            <li><a class="acitive" onkeyup=""href="CVpage.html">My CV</a></li>
-            <li><a class="acitive" href="projectPage.html">Projects</a></li>
-            <li><a class="acitive" onkeyup=""href="contactPage.html">Contact</a></li>
-            <li><a class="acitive" href="#">Additional</a></li>
+          <ul class="navbar">
+            <li><a href="homePage.html">Home</a></li>
+            <li><a href="cvPage.html">My CV</a></li>
+            <li><a href="#">About me</a></li>
+            <li><a href="projectPage.html">Projects</a></li>
+            <li><a href="contactPage.html">Contact</a></li>
           </ul>
-        </nav>
-      </div>
+      </nav>
     </header>
 
     <main>
       <div class="cvBox">
-        <section>
+        <section class="cvPage1">
+          <img class="cvPhoto" src="img/cvPhoto.jpg" alt="My CV photo">
+        </section>
+        <section class="cvPage2">
           <p id="headings">My CV</p>
           <ul class="lists">
             <li><strong>Name:</strong> Emilija Budrytė</li>
@@ -74,15 +75,15 @@
       </div>
     </main>
 
-      <footer class="footerBox">
-        <div class="footer">
-          <ul>
-            <li><a href="#"><i class="fa fa-facebook-square fa-2x"></i></a></li>
-            <li><a href="#"><i class="fa fa-instagram fa-2x"></i></a></li>
-            <li><a href="#"><i class="fa fa-github fa-2x"></i></a></li>
-          </ul>
-        </div>
-      </footer>
+    <footer class="footerBox">
+      <div>
+        <ul class="footer">
+          <li><a href="https://www.facebook.com/buudryte"><i class="fa fa-facebook-square fa-2x"></i></a></li>
+          <li><a href="https://www.instagram.com/buudryte/"><i class="fa fa-instagram fa-2x"></i></a></li>
+          <li><a href="https://github.com/budryte"><i class="fa fa-github fa-2x"></i></a></li>
+        </ul>
+      </div>
+    </footer>
 
   </body>
 </html>
