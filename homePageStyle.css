@@ -37,7 +37,6 @@ header{
 .inactive a {
     display: block;
     color: #FFFBBD;
-    //color: white;
     text-align: center;
     font-family: 'Quicksand', sans-serif;
     font-size: 19px;
@@ -46,25 +45,23 @@ header{
     text-transform: uppercase;
 }
 
-.active a::after{
-  content: "";
-  display: block;
-  height: 2px;
-  width: 100%;
-  background: #FFFFFF;
-  transition: 0.5s;
-}
-
 .active a{
   display: block;
-  //color: white;
+  color: #FFFFFF;
   text-align: center;
   font-family: 'Quicksand', sans-serif;
   font-size: 19px;
   padding: 20px 15px;
   text-decoration: none;
   text-transform: uppercase;
-  color: #FFFFFF;
+}
+
+.active a::after{
+  content: "";
+  display: block;
+  //height: 2px;
+  //width: 100%;
+  //background: #FFFFFF;
 }
 
 .inactive a::after {
@@ -80,10 +77,6 @@ header{
 
 .inactive a:hover::after {
     width: 100%;
-}
-
-.active a:hover::after{
-  width: 0;
 }
 
 .navbar li a:hover {
