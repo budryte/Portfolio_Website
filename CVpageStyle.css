@@ -3,8 +3,21 @@
   margin: 0;
 }
 
+html{
+  width: 100%;
+  display: flex;
+}
+
 body{
   background-color:#EDDEA4;
+  width: 100%;
+  display: flex;
+  min-height: 100vh;
+  flex-direction: column;
+}
+
+main {
+  flex-grow: 1;
 }
 
 .navbar{
@@ -23,9 +36,9 @@ body{
   position: relative;
 }
 
-.navbar li a {
+.inactive a {
   display: block;
-  color: #EDDEA4;
+  color: #FFFBBD;
   text-align: center;
   font-family: 'Quicksand', sans-serif;
   font-size: 19px;
@@ -34,21 +47,40 @@ body{
   text-transform: uppercase;
 }
 
-.navbar li a::after {
+.active a{
+  display: block;
+  color: #FFFFFF;
+  text-align: center;
+  font-family: 'Quicksand', sans-serif;
+  font-size: 19px;
+  padding: 20px 15px;
+  text-decoration: none;
+  text-transform: uppercase;
+}
+
+.active a::after{
+  content: "";
+  display: block;
+  //height: 2px;
+  //width: 100%;
+  //background: #FFFFFF;
+}
+
+.inactive a::after {
   content: "";
   display: block;
   width: 0;
   height: 2px;
-  background: #FFFBBD;
+  background: #FFFFFF;
   transition: 0.5s;
 }
 
-.navbar li a:hover::after {
+.inactive a:hover::after {
     width: 100%;
 }
 
 .navbar li a:hover {
-    color: #FFFBBD;
+    color: #FFFFFF;
 }
 
 .cvBox{
@@ -133,11 +165,12 @@ body{
   padding: 0;
   margin: 0 auto;
   overflow: hidden;
-  //margin-right: 40px;
+  margin-left: auto;
+  margin-right: auto;
   display: flex;
 }
 
-.footerBoxter li {
+.footer li {
   display: inline-block;
   position: relative;
 }
