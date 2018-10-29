@@ -87,6 +87,7 @@ main {
   margin: 80px auto 20px auto;
   background-color: #3C352A;
   width: 80%;
+  height: 80%;
   padding-top: 40px;
   padding-bottom: 40px;
 }
@@ -156,18 +157,14 @@ main {
 .footerBox{
   background-color: #3C352A;
   width: 100%;
-  padding: 10px 0;
+  padding-top: 10px;
+  padding-bottom: 10px;
 }
 
 .footer {
   text-align: center;
   list-style-type: none;
-  padding: 0;
-  margin: 0 auto;
   overflow: hidden;
-  margin-left: auto;
-  margin-right: auto;
-  display: flex;
 }
 
 .footer li {

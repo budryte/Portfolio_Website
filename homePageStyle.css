@@ -18,6 +18,32 @@ header{
   display: table;
 }
 
+.hamburger{
+  width: 100%;
+  padding: 20px 15px;
+  text-align: center;
+  //box-sizing: border-box;
+  color: #FFFBBD;
+  display: none;
+}
+
+@media (max-width:600px)
+{
+  .hamburger
+  {
+    display: block;
+  }
+  .navbar
+  {
+    width: 100%;
+  }
+  .navbar li
+  {
+    display: block;
+    text-align: center;
+  }
+}
+
 .navbar{
   list-style-type: none;
   overflow: hidden;
