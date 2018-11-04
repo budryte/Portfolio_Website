@@ -21,75 +21,62 @@ main {
 }
 
 .navbar{
-  list-style-type: none;
-  overflow: hidden;
-  text-align: center;
   width: 100%;
-  background-color: rgb(60,53,42,0.9);
-  /*for scrolling view*/
-  position: fixed;
-  top: 0;
+  padding: 0;
+}
+#navbarNav {
+   list-style-type: none;
+   overflow: hidden;
+   width: 100%;
+   background-color: rgb(60,53,42,0.9);
+   /*for scrolling view*/
+   position: fixed;
+   top: 0;
 }
 
-.navbar li{
-  display: inline-block;
-  position: relative;
+.inactive .nav-link {
+ color: #FFFBBD;
+ text-align: center;
+ font-family: 'Quicksand', sans-serif;
+ font-size: 19px;
+ padding: 20px 15px;
+ text-decoration: none;
+ text-transform: uppercase;
 }
 
-.inactive a {
-  display: block;
-  color: #FFFBBD;
-  text-align: center;
-  font-family: 'Quicksand', sans-serif;
-  font-size: 19px;
-  padding: 20px 15px;
-  text-decoration: none;
-  text-transform: uppercase;
+.active .nav-link{
+ color: #FFFFFF;
+ text-align: center;
+ font-family: 'Quicksand', sans-serif;
+ font-size: 19px;
+ padding: 20px 15px;
+ text-decoration: none;
+ text-transform: uppercase;
 }
 
-.active a{
-  display: block;
-  color: #FFFFFF;
-  text-align: center;
-  font-family: 'Quicksand', sans-serif;
-  font-size: 19px;
-  padding: 20px 15px;
-  text-decoration: none;
-  text-transform: uppercase;
+.inactive .nav-link::after {
+ content: "";
+ display: block;
+ width: 0;
+ height: 2px;
+ background: #FFFFFF;
+ transition: 0.5s;
 }
 
-.active a::after{
-  content: "";
-  display: block;
-  //height: 2px;
-  //width: 100%;
-  //background: #FFFFFF;
+.inactive .nav-link:hover::after {
+   width: 100%;
 }
 
-.inactive a::after {
-  content: "";
-  display: block;
-  width: 0;
-  height: 2px;
-  background: #FFFFFF;
-  transition: 0.5s;
-}
-
-.inactive a:hover::after {
-    width: 100%;
-}
-
-.navbar li a:hover {
-    color: #FFFFFF;
+#navbarNav li .nav-link:hover {
+   color: #FFFFFF;
+   //color: #3C352A;
 }
 
 .cvBox{
   margin: 80px auto 20px auto;
   background-color: #3C352A;
   width: 80%;
-  height: 80%;
-  padding-top: 40px;
-  padding-bottom: 40px;
+  padding: 40px 10px 40px 10px;
 }
 
 .cvBox::after{
@@ -99,19 +86,39 @@ main {
 }
 
 .cvPage2{
-  float: right;
-  width: 65%;
+  float: left;
+  width: 60%;
 }
 
 .cvPhoto{
     float: left;
     display: block;
-    margin-left: 30px;
+    margin: 0 10px 10px 30px;
     width: 30%;
-    border-color: #EDDEA4;
-    border-style: solid;
-    border-width:5px;
+    border: #EDDEA4 solid 5px;
     border-radius: 10px;
+}
+
+@media only screen and (max-width: 600px)
+{
+  .cvPage2{
+    width: 100%;
+    padding-top: 30px;
+  }
+
+  .cvPage1{
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+  }
+
+  .cvPhoto{
+    float: none;
+    width: 70%;
+    border: #EDDEA4 solid 5px;
+    border-radius: 10px;
+    margin: 0 auto;
+  }
 }
 
 #headings {
@@ -180,5 +187,5 @@ main {
 }
 
 .footer li a:hover {
-    color: #FFFBBD;
+    color: #FFFFFF;
 }
