@@ -72,6 +72,27 @@ main {
    //color: #3C352A;
 }
 
+@media screen and (max-width:992px)
+{
+  .navbar {
+   background-color: rgb(60,53,42) !important;
+   max-width: 100vw !important;
+  }
+  .collapse{
+    border-top: #FFFFFF solid 1px;
+  }
+
+  .inactive .nav-link {
+    padding: 10px 0;
+    font-size: 17px;
+  }
+
+  .active .nav-link{
+    padding: 10px 0;
+    font-size: 17px;
+  }
+}
+
 .cvBox{
   margin: 80px auto 20px auto;
   background-color: #3C352A;
@@ -172,6 +193,7 @@ main {
   text-align: center;
   list-style-type: none;
   overflow: hidden;
+  margin: auto 0;
 }
 
 .footer li {

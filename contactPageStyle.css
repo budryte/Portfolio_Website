@@ -24,6 +24,7 @@ main {
   width: 100%;
   padding: 0;
 }
+
 #navbarNav {
    list-style-type: none;
    overflow: hidden;
@@ -86,18 +87,14 @@ main {
   width: 100%;
   padding-top: 10px;
   padding-bottom: 10px;
-}
-
-.footerBox{
-  background-color: #3C352A;
-  width: 100%;
-  padding: 10px 0;
+  margin: 0;
 }
 
 .footer {
   text-align: center;
   list-style-type: none;
   overflow: hidden;
+  margin: auto 0;
 }
 
 .footer li {
