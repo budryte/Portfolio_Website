@@ -20,64 +20,58 @@ main {
   flex-grow: 1;
 }
 
+/* NAVBAR CREATION*/
 .navbar{
   width: 100%;
   padding: 0;
 }
-#navbarNav {
-   list-style-type: none;
-   overflow: hidden;
-   width: 100%;
-   background-color: rgb(60,53,42,0.9);
-   /*for scrolling view*/
-   position: fixed;
-   top: 0;
+
+ #navbarNav {
+  list-style-type: none;
+  overflow: hidden;
+  width: 100%;
+  background-color: rgb(60,53,42,0.9);
 }
 
 .inactive .nav-link {
- color: #FFFBBD;
- text-align: center;
- font-family: 'Quicksand', sans-serif;
- font-size: 19px;
- padding: 20px 15px;
- text-decoration: none;
- text-transform: uppercase;
+  color: #FFFBBD !important;
+  text-align: center;
+  font-family: 'Quicksand', sans-serif;
+  font-size: 19px;
+  padding: 20px 15px;
+  text-decoration: none;
+  text-transform: uppercase;
 }
 
 .active .nav-link{
- color: #FFFFFF;
- text-align: center;
- font-family: 'Quicksand', sans-serif;
- font-size: 19px;
- padding: 20px 15px;
- text-decoration: none;
- text-transform: uppercase;
-}
-
-.inactive .nav-link::after {
- content: "";
- display: block;
- width: 0;
- height: 2px;
- background: #FFFFFF;
- transition: 0.5s;
+  color: #FFFFFF !important;
+  text-align: center;
+  font-family: 'Quicksand', sans-serif;
+  font-size: 19px;
+  padding: 20px 15px;
+  text-decoration: none;
+  text-transform: uppercase;
 }
 
 .inactive .nav-link:hover::after {
-   width: 100%;
+    width: 100%;
 }
 
 #navbarNav li .nav-link:hover {
-   color: #FFFFFF;
-   //color: #3C352A;
+    color: #FFFFFF !important;
 }
 
+
+/*RESPONSIVE DESIGN FOR SMALL SCREENS*/
 @media screen and (max-width:992px)
 {
+  /*NAVBAR*/
   .navbar {
    background-color: rgb(60,53,42) !important;
    max-width: 100vw !important;
+   padding: 8px 14px !important;
   }
+
   .collapse{
     border-top: #FFFFFF solid 1px;
   }
@@ -91,86 +85,123 @@ main {
     padding: 10px 0;
     font-size: 17px;
   }
+
+  /*CV CONTENT*/
+  .title{
+    //color: #FFFBBD !important;
+    font-family: 'Quicksand', sans-serif;
+    text-transform: uppercase;
+  }
+
+  .photo{
+    text-align: center !important;
+  }
+
+  .cvPhoto{
+    width: 40% !important;
+    float: none !important;
+    border: #EDDEA4 solid 5px;
+    border-radius: 10px;
+    margin: 30px auto 0px auto !important;
+  }
+
+  .text{
+    margin: 20px 20px !important;
+    display: block !important;
+    width: 100% !important;
+    float: none !important;
+  }
+
+  .horizontalLine{
+    width: 90% !important;
+  }
+
+  #headings {
+    display: inline;
+    width: 100%;
+   }
+
+  #aboutMe{
+    padding: 20px 40px 20px 0  !important;
+  }
+
+  .lists{
+    padding: 0 40px 0 0 !important;
+  }
 }
 
-.cvBox{
-  margin: 80px auto 20px auto;
-  background-color: #3C352A;
-  width: 80%;
-  padding: 40px 10px 40px 10px;
+/*RESPONSIVE DESIGN FOR BIG SCREENS*/
+@media screen and (min-width:992px)
+{
+  .inactive .nav-link::after {
+    content: "";
+    display: block;
+    width: 0;
+    height: 2px;
+    background: #FFFFFF;
+    transition: 0.5s;
+  }
+  .title{
+    display:none;
+  }
+
+  .cvPhoto{
+    float: left;
+    width: 300px;
+    border: #EDDEA4 solid 5px;
+    border-radius: 10px;
+    margin: 60px 30px 0 50px;
+  }
+
+  .text{
+    margin: 20px 20px;
+    float: left;
+    display: block;
+    width: 60%;
+  }
 }
 
-.cvBox::after{
+/*CV SECTION*/
+.cvBox:after {
   content: "";
   display: flex;
   clear: both;
 }
 
-.cvPage2{
-  float: left;
-  width: 60%;
+.cvBox{
+  margin: 80px auto 10px auto;
+  background-color: #3C352A;
+  width: 90%;
 }
 
-.cvPhoto{
-    float: left;
-    display: block;
-    margin: 0 10px 10px 30px;
-    width: 30%;
-    border: #EDDEA4 solid 5px;
-    border-radius: 10px;
-}
-
-@media only screen and (max-width: 600px)
-{
-  .cvPage2{
-    width: 100%;
-    padding-top: 30px;
-  }
-
-  .cvPage1{
-    margin-left: auto;
-    margin-right: auto;
-    text-align: center;
-  }
-
-  .cvPhoto{
-    float: none;
-    width: 70%;
-    border: #EDDEA4 solid 5px;
-    border-radius: 10px;
-    margin: 0 auto;
-  }
+.horizontalLine{
+  border-bottom: #EDDEA4 solid 2px;
+  width: 100%;
+  color:#EDDEA4;
 }
 
 #headings {
   font-family: 'Quicksand', sans-serif;
   font-size: 22px;
-  text-align: center;
-  background-color: #EDDEA4;
-  color:#3C352A;
-  margin: 0 20px 0 20px;
-  padding: 5px 20px 5px 20px;
+  color:#EDDEA4;
   display: inline;
-  border-radius: 10px;
   text-transform: uppercase;
+  width: 80%;
+  margin: 5px 0;
 }
 
 #aboutMe{
   font-family: 'Quicksand', sans-serif;
   font-size: 18px;
-  margin: 20px 40px;
-  padding-left: 10px;
   text-align: left;
-  margin: 20px 20px;
-  padding: 5px 10px 5px 10px;
   color: white;
+  padding: 30px 10px 10px 0px;
 }
 
 .lists{
   list-style-type: none;
   display: block;
-  padding: 5px 10px 5px 10px;
-  margin: 20px 20px;
+  margin: 30px 0;
 }
 
 .lists li{
@@ -178,10 +209,11 @@ main {
   font-size: 18px;
   font-family: 'Quicksand', sans-serif;
   text-decoration: none;
-  padding: 2px 0 2px 0;
   color: white;
+  padding: 3px 0 3px 0;
 }
 
+/*FOOTER*/
 .footerBox{
   background-color: #3C352A;
   width: 100%;

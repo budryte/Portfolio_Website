@@ -10,6 +10,7 @@ html, body {
 
 .navbar{
   width: 100%;
+  padding: 0;
 }
 
  #navbarNav {
@@ -52,6 +53,7 @@ html, body {
   .navbar {
    background-color: rgb(60,53,42) !important;
    max-width: 100vw !important;
+   padding: 8px 14px !important;
   }
   .collapse{
     border-top: #FFFFFF solid 1px;
