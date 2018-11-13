@@ -88,6 +88,10 @@ main {
     padding: 10px 0;
     font-size: 17px;
   }
+
+  p{
+    font-size: 15px !important;
+  }
 }
 
 @media screen and (min-width:992px)
@@ -107,13 +111,60 @@ main {
 }
 
 .contactBox{
-  margin: 80px auto 20px auto;
+  margin: 80px auto 10px auto;
   background-color: #3C352A;
   width: 80%;
-  padding-top: 40px;
-  padding-bottom: 40px;
+  padding: 30px;
 }
 
+.contacts{
+  padding-right: 50px;
+}
+
+h1{
+  font-family: 'Quicksand', sans-serif;
+  font-size: 35px;
+  color:#EDDEA4;
+  text-transform: uppercase;
+  width: 80%;
+  margin: 5px auto 20px auto;
+  text-align: center;
+}
+
+h3{
+  font-family: 'Quicksand', sans-serif;
+  font-size: 25px;
+  color:#EDDEA4;
+  text-transform: uppercase;
+  width: 80%;
+  margin: 5px 0;
+}
+
+span{
+  font-family: 'Quicksand', sans-serif;
+  font-size: 20px;
+  color:#FFFFFF;
+  width: 80%;
+  margin: 5px 0;
+}
+
+p{
+  font-family: 'Quicksand', sans-serif;
+  font-size: 20px;
+  color:#FFFFFF;
+  width: 80%;
+  margin: 10px 0 10px 22px;
+}
+
+.horizontalLine{
+  border-bottom: #EDDEA4 solid 2px;
+  width: 80%;
+  color:#EDDEA4;
+  margin-bottom: 20px;
+}
+
+
+/*FOOTER*/
 .footerBox{
   background-color: #3C352A;
   width: 100%;
