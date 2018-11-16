@@ -23,6 +23,7 @@ main {
 .navbar{
   width: 100%;
   padding: 0;
+  box-shadow: 0 4px 3px 0 rgba(0, 0, 0, 0.3);
 }
 
  #navbarNav {
@@ -86,6 +87,10 @@ main {
   .active .nav-link{
     padding: 10px 0;
     font-size: 17px;
+  }
+
+  .footer li a {
+    padding: 0 5px !important;
   }
 }
 

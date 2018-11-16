@@ -55,6 +55,7 @@ html, body {
    max-width: 100vw !important;
    padding: 8px 14px !important;
   }
+
   .collapse{
     border-top: #FFFFFF solid 1px;
   }
@@ -68,45 +69,16 @@ html, body {
     padding: 10px 0;
     font-size: 17px;
   }
+
   h1 {
-     display: block;
-     font-size: 30px !important;
+     font-size: 45px !important;
      border-bottom: 3px solid #FFFBBD;
-     margin: auto auto;
+     letter-spacing: 0px !important;
   }
+
   p{
-    display: block;
-    font-size: 15px !important;
-  }
-
-  .footerBox{
-    background-color: rgb(60,53,42);
-    width: 100%;
-    padding-top: 10px;
-    padding-bottom: 10px;
-  }
-
-  .footer {
-    text-align: center;
-    list-style-type: none;
-    overflow: hidden;
-    margin: auto 0;
-  }
-
-  .footer li {
-    display: inline-block;
-    position: relative;
-  }
-
-  .footer li a {
-    display: block;
-    color: #EDDEA4;
-    padding-left: 5px;
-    padding-right: 5px;
-  }
-
-  .footer li a:hover {
-      color: #FFFFFF;
+    font-size: 20px !important;
+    margin-bottom: 80px !important;
   }
 }
 
@@ -119,10 +91,6 @@ html, body {
     height: 2px;
     background: #FFFFFF;
     transition: 0.5s;
-  }
-
-  .footerBox{
-    display: none;
   }
 }
 
@@ -139,16 +107,20 @@ header{
 }
 
 /*text on a full screen image*/
-.text{
+.content{
   margin: auto auto;
   width: 100%;
-  max-width: none;
+}
+
+.text{
+  margin-top: 130px;
+  margin-bottom: 150px;
 }
 
 /*name ant surname*/
  h1{
   text-align: center;
-  font-size: 60px;
+  font-size: 70px;
   font-family: 'Quicksand', sans-serif;
   color: #FFFBBD;
   letter-spacing: 10px;
@@ -156,7 +128,7 @@ header{
   text-transform: uppercase;
   border-bottom: 3px solid #FFFBBD;
   margin: auto auto;
-  width: 65%;
+  width: 75%;
 }
 
 /*additional text*/
@@ -167,10 +139,32 @@ p{
   color: #FFFBBD;
   text-decoration: none;
   text-transform: uppercase;
-  margin: auto auto;
-  margin-bottom: 60px;
 }
 
-.logo{
-  display: none;
+.homePageButton button{
+  text-align: center;
+  font-size: 18px;
+  font-family: 'Quicksand', sans-serif;
+  background: none;
+  color: #FFFBBD;
+  text-decoration: none;
+  text-transform: uppercase;
+  width: 150px;
+  height: 50px;
+  border: #FFFBBD solid 3px;
+  box-shadow: 0 4px 3px 0 rgba(0, 0, 0, 0.3);
+  -webkit-transition-duration: 0.4s; /* Safari */
+  transition-duration: 0.4s;
+}
+
+.homePageButton button:hover {
+    background-color: rgb(60,53,42, 0.5); /* Green */
+}
+
+.homePageButton a{
+  margin: auto auto;
+}
+
+.homePageButton {
+  display: flex;
 }
