@@ -38,7 +38,7 @@ main {
   text-align: center;
   font-family: 'Quicksand', sans-serif;
   font-size: 19px;
-  padding: 20px 15px;
+  padding: 15px;
   text-decoration: none;
   text-transform: uppercase;
 }
@@ -48,7 +48,7 @@ main {
   text-align: center;
   font-family: 'Quicksand', sans-serif;
   font-size: 19px;
-  padding: 20px 15px;
+  padding: 15px;
   text-decoration: none;
   text-transform: uppercase;
 }
@@ -69,8 +69,8 @@ main {
    padding: 8px 14px !important;
   }
 
-  .title{
-    //color: #FFFBBD !important;
+  .title p {
+    /color: #FFFBBD !important;
     font-family: 'Quicksand', sans-serif;
     text-transform: uppercase;
   }
@@ -110,14 +110,67 @@ main {
     }
 }
 
-.contactBox{
+/*CONTENT*/
+.contentBox{
   margin: 80px auto 20px auto;
   background-color: #3C352A;
-  width: 80%;
+  width: 90%;
   padding-top: 40px;
   padding-bottom: 40px;
+  box-shadow: 0 4px 10px 0 rgba(0, 0, 0, 0.6), 0 6px 20px 0 rgba(0, 0, 0, 0.3);
 }
 
+.projects h2{
+  font-family: 'Quicksand', sans-serif;
+  font-size: 45px;
+  color:#EDDEA4;
+  text-transform: uppercase;
+  width: 80%;
+  margin: 0px auto 30px auto;
+  text-align: center;
+}
+
+.aboutProjects p{
+  font-family: 'Quicksand', sans-serif;
+  font-size: 18px;
+  text-align: left;
+  color:#EDDEA4;
+  margin: 20px 60px;
+}
+
+.horizontalLine{
+  border-bottom: #EDDEA4 solid 2px;
+  width: 90%;
+  color:#EDDEA4;
+  margin-bottom: 20px;
+  margin: auto auto;
+}
+
+.card {
+  background-color:#EDDEA4 !important;
+  min-width: 14rem;
+}
+
+.card-deck{
+  padding: 30px 60px;
+}
+
+.card-title{
+  font-family: 'Quicksand', sans-serif;
+  font-size: 24px;
+}
+
+.card-text{
+  font-family: 'Quicksand', sans-serif;
+  font-size: 16px;
+}
+
+.btn{
+  background-color:#3C352A !important;
+  border: none;
+}
+
+/*FOOTER*/
 .footerBox{
   background-color: #3C352A;
   width: 100%;
