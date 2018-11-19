@@ -112,24 +112,20 @@ main {
   }
 
   .text{
-    margin: 20px 20px !important;
+    padding: 10px 20px !important;
     display: block !important;
     width: 100% !important;
     float: none !important;
   }
 
   .horizontalLine{
-    width: 90% !important;
+    width: 100% !important;
   }
 
   #headings {
     display: inline;
     width: 100%;
    }
-
-  #aboutMe{
-    padding: 20px 40px 20px 0  !important;
-  }
 
   .lists{
     padding: 0 40px 0 0 !important;

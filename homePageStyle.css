@@ -54,6 +54,7 @@ html, body {
    background-color: rgb(60,53,42) !important;
    max-width: 100vw !important;
    padding: 8px 14px !important;
+   box-shadow: 0 4px 3px 0 rgba(0, 0, 0, 0.3);
   }
 
   .collapse{
@@ -154,11 +155,11 @@ p{
   border: #FFFBBD solid 3px;
   box-shadow: 0 4px 3px 0 rgba(0, 0, 0, 0.3);
   -webkit-transition-duration: 0.4s; /* Safari */
-  transition-duration: 0.4s;
+  transition-duration: 0.5s;
 }
 
 .homePageButton button:hover {
-    background-color: rgb(60,53,42, 0.5); /* Green */
+    background-color: rgb(60,53,42,0.7);
 }
 
 .homePageButton a{
