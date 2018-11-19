@@ -23,6 +23,7 @@ main {
 .navbar{
   width: 100%;
   padding: 0;
+  box-shadow: 0 4px 3px 0 rgba(0, 0, 0, 0.3);
 }
 
  #navbarNav {
@@ -37,7 +38,7 @@ main {
   text-align: center;
   font-family: 'Quicksand', sans-serif;
   font-size: 19px;
-  padding: 20px 15px;
+  padding: 15px;
   text-decoration: none;
   text-transform: uppercase;
 }
@@ -47,7 +48,7 @@ main {
   text-align: center;
   font-family: 'Quicksand', sans-serif;
   font-size: 19px;
-  padding: 20px 15px;
+  padding: 15px;
   text-decoration: none;
   text-transform: uppercase;
 }
@@ -68,8 +69,12 @@ main {
    padding: 8px 14px !important;
   }
 
-  .title{
-    //color: #FFFBBD !important;
+  .contentBox{
+    width: 100% !important;
+  }
+
+  .title p {
+    /color: #FFFBBD !important;
     font-family: 'Quicksand', sans-serif;
     text-transform: uppercase;
   }
@@ -86,6 +91,10 @@ main {
   .active .nav-link{
     padding: 10px 0;
     font-size: 17px;
+  }
+
+  .footer li a {
+    padding: 0 5px !important;
   }
 }
 
@@ -105,14 +114,105 @@ main {
     }
 }
 
-.contactBox{
+/*CONTENT*/
+.contentBox{
   margin: 80px auto 20px auto;
   background-color: #3C352A;
-  width: 80%;
+  width: 90%;
   padding-top: 40px;
   padding-bottom: 40px;
+  box-shadow: 0 4px 10px 0 rgba(0, 0, 0, 0.6), 0 6px 20px 0 rgba(0, 0, 0, 0.3);
 }
 
+.projects h2{
+  font-family: 'Quicksand', sans-serif;
+  font-size: 45px;
+  color:#EDDEA4;
+  text-transform: uppercase;
+  width: 80%;
+  margin: 0px auto 30px auto;
+  text-align: center;
+}
+
+.aboutProjects p{
+  font-family: 'Quicksand', sans-serif;
+  font-size: 18px;
+  text-align: left;
+  color:#EDDEA4;
+  margin: 20px 30px;
+}
+
+.horizontalLine{
+  border-bottom: #EDDEA4 solid 2px;
+  width: 95%;
+  color:#EDDEA4;
+  margin-bottom: 20px;
+  margin: auto auto;
+}
+
+.listOfProjects{
+  padding: 0 40px !important;
+}
+
+.card-deck{
+
+}
+
+.card{
+  background-color:#EDDEA4 !important;
+  min-width: 224px;
+  max-width: 224px;
+  margin: 30px auto !important;
+}
+
+.card-columns {
+    @include media-breakpoint-only(lg) {
+      column-count: 4;
+    }
+    @include media-breakpoint-only(xl) {
+      column-count: 5;
+  }
+}
+
+.card-title{
+  font-family: 'Quicksand', sans-serif;
+  font-size: 24px;
+}
+
+.card-text{
+  font-family: 'Quicksand', sans-serif;
+  font-size: 16px;
+}
+
+.btn{
+  background-color:#3C352A !important;
+  border: none;
+}
+
+#projectTitle {
+  font-family: 'Quicksand', sans-serif;
+  font-size: 26px;
+  color:#EDDEA4;
+  display: inline;
+  text-transform: uppercase;
+  width: 80%;
+  margin: 5px 0;
+  padding: 0 30px;
+}
+
+#aboutProject{
+  font-family: 'Quicksand', sans-serif;
+  font-size: 18px;
+  text-align: left;
+  color: white;
+  padding: 30px 30px 10px 30px;
+}
+
+.projectSections{
+  margin-top: 30px;
+}
+
+/*FOOTER*/
 .footerBox{
   background-color: #3C352A;
   width: 100%;

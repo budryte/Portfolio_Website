@@ -23,6 +23,7 @@ main {
 .navbar{
   width: 100%;
   padding: 0;
+  box-shadow: 0 4px 3px 0 rgba(0, 0, 0, 0.3);
 }
 
  #navbarNav {
@@ -37,7 +38,7 @@ main {
   text-align: center;
   font-family: 'Quicksand', sans-serif;
   font-size: 19px;
-  padding: 20px 15px;
+  padding: 15px;
   text-decoration: none;
   text-transform: uppercase;
 }
@@ -47,7 +48,7 @@ main {
   text-align: center;
   font-family: 'Quicksand', sans-serif;
   font-size: 19px;
-  padding: 20px 15px;
+  padding: 15px;
   text-decoration: none;
   text-transform: uppercase;
 }
@@ -60,19 +61,13 @@ main {
     color: #FFFFFF !important;
 }
 
-
 @media screen and (max-width:992px)
 {
+  /*NAVBAR*/
   .navbar {
    background-color: rgb(60,53,42) !important;
    max-width: 100vw !important;
    padding: 8px 14px !important;
-  }
-
-  .title{
-    //color: #FFFBBD !important;
-    font-family: 'Quicksand', sans-serif;
-    text-transform: uppercase;
   }
 
   .collapse{
@@ -89,8 +84,23 @@ main {
     font-size: 17px;
   }
 
-  p{
+  .title{
+    //color: #FFFBBD !important;
+    font-family: 'Quicksand', sans-serif;
+    text-transform: uppercase;
+  }
+
+  .contacts p{
     font-size: 15px !important;
+  }
+
+  .contactBox{
+    margin: 70px auto 15px auto !important;
+    width: 100% !important;
+  }
+
+  .footer li a {
+    padding: 0 5px !important;
   }
 }
 
@@ -111,10 +121,11 @@ main {
 }
 
 .contactBox{
-  margin: 80px auto 10px auto;
+  margin: 80px auto 15px auto;
   background-color: #3C352A;
-  width: 80%;
+  width: 90%;
   padding: 30px;
+  box-shadow: 0 4px 10px 0 rgba(0, 0, 0, 0.6), 0 6px 20px 0 rgba(0, 0, 0, 0.3);
 }
 
 .contacts{
@@ -123,7 +134,7 @@ main {
 
 h1{
   font-family: 'Quicksand', sans-serif;
-  font-size: 35px;
+  font-size: 45px;
   color:#EDDEA4;
   text-transform: uppercase;
   width: 80%;
@@ -133,14 +144,14 @@ h1{
 
 h3{
   font-family: 'Quicksand', sans-serif;
-  font-size: 25px;
+  font-size: 30px;
   color:#EDDEA4;
   text-transform: uppercase;
   width: 80%;
   margin: 5px 0;
 }
 
-span{
+.contacts span{
   font-family: 'Quicksand', sans-serif;
   font-size: 20px;
   color:#FFFFFF;
@@ -148,7 +159,7 @@ span{
   margin: 5px 0;
 }
 
-p{
+.contacts p{
   font-family: 'Quicksand', sans-serif;
   font-size: 20px;
   color:#FFFFFF;
@@ -158,11 +169,10 @@ p{
 
 .horizontalLine{
   border-bottom: #EDDEA4 solid 2px;
-  width: 80%;
+  width: 100%;
   color:#EDDEA4;
   margin-bottom: 20px;
 }
-
 
 /*FOOTER*/
 .footerBox{
