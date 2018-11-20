@@ -142,6 +142,7 @@ main {
   .title {
     display: none;
   }
+
 }
 
 /*CONTENT*/
@@ -157,13 +158,12 @@ main {
 .projects h2 {
   font-family: 'Quicksand', sans-serif;
   font-weight: 600;
-  font-size: 45px;
+  font-size: 50px;
   color: #EDDEA4;
   width: 40%;
   text-transform: uppercase;
   margin: 0px auto 30px auto;
   text-align: center;
-
 }
 
 .aboutProjects p {
@@ -206,6 +206,36 @@ main {
 .btn {
   background-color: #3C352A !important;
   border: none;
+}
+
+.projectSections button{
+  text-align: center;
+  font-size: 18px;
+  font-family: 'Quicksand', sans-serif;
+  background: none;
+  color: #FFFBBD;
+  text-decoration: none;
+  text-transform: uppercase;
+  width: 100px;
+  height: 50px;
+  border: #FFFBBD solid 3px;
+  box-shadow: 0 4px 3px 0 rgba(0, 0, 0, 0.3);
+  -webkit-transition-duration: 0.4s; /* Safari */
+  transition-duration: 0.5s;
+}
+
+.projectSections button:hover {
+    color: rgb(60,53,42);
+    font-weight: 600;
+    background-color: #FFFBBD;
+}
+
+.projectSections a{
+  margin: 0 10px;
+}
+
+.projectButtons {
+  margin: 0 20px 30px 20px;
 }
 
 #projectTitle {
