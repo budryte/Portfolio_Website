@@ -142,6 +142,7 @@ main {
   .title {
     display: none;
   }
+
 }
 
 /*CONTENT*/
@@ -157,13 +158,12 @@ main {
 .projects h2 {
   font-family: 'Quicksand', sans-serif;
   font-weight: 600;
-  font-size: 45px;
+  font-size: 50px;
   color: #EDDEA4;
   width: 40%;
   text-transform: uppercase;
   margin: 0px auto 30px auto;
   text-align: center;
-
 }
 
 .aboutProjects p {
