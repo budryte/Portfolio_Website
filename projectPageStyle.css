@@ -1,15 +1,15 @@
-*{
+* {
   padding: 0;
   margin: 0;
 }
 
-html{
+html {
   width: 100%;
   display: flex;
 }
 
-body{
-  background-color:#EDDEA4;
+body {
+  background-color: #EDDEA4;
   width: 100%;
   display: flex;
   min-height: 100vh;
@@ -20,17 +20,17 @@ main {
   flex-grow: 1;
 }
 
-.navbar{
+.navbar {
   width: 100%;
   padding: 0;
   box-shadow: 0 4px 3px 0 rgba(0, 0, 0, 0.3);
 }
 
- #navbarNav {
+#navbarNav {
   list-style-type: none;
   overflow: hidden;
   width: 100%;
-  background-color: rgb(60,53,42,0.9);
+  background-color: rgb(60, 53, 42, 0.9);
 }
 
 .inactive .nav-link {
@@ -43,7 +43,7 @@ main {
   text-transform: uppercase;
 }
 
-.active .nav-link{
+.active .nav-link {
   color: #FFFFFF !important;
   text-align: center;
   font-family: 'Quicksand', sans-serif;
@@ -54,23 +54,23 @@ main {
 }
 
 .inactive .nav-link:hover::after {
-    width: 100%;
+  width: 100%;
 }
 
 #navbarNav li .nav-link:hover {
-    color: #FFFFFF !important;
+  color: #FFFFFF !important;
 }
 
-@media screen and (max-width:992px)
-{
+@media screen and (max-width:992px) {
   .navbar {
-   background-color: rgb(60,53,42) !important;
-   max-width: 100vw !important;
-   padding: 8px 14px !important;
+    background-color: rgb(60, 53, 42) !important;
+    max-width: 100vw !important;
+    padding: 8px 14px !important;
   }
 
-  .contentBox{
+  .contentBox {
     width: 100% !important;
+    margin: 70px auto 15px auto !important;
   }
 
   .title p {
@@ -79,8 +79,39 @@ main {
     text-transform: uppercase;
   }
 
-  .collapse{
+  .horizontalLine {
+    width: 90% !important;
+  }
+
+  .collapse {
     border-top: #FFFFFF solid 1px;
+  }
+
+  #projectTitle {
+    margin: 5px 0;
+    padding: 30px;
+  }
+
+  .subHeading {
+    margin: 5px 0;
+    padding: 30px;
+  }
+
+  #aboutProject {
+    padding: 10px 5px 10px 30px;
+  }
+
+  .projectPhoto {
+    float: left;
+    width: 60% !important;
+    margin: 30px;
+  }
+
+  #project1, #project2, #project3, #project4 {
+    float: left;
+    display: block;
+    width: 100% !important;
+    margin-top: 25px;
   }
 
   .inactive .nav-link {
@@ -88,7 +119,7 @@ main {
     font-size: 17px;
   }
 
-  .active .nav-link{
+  .active .nav-link {
     padding: 10px 0;
     font-size: 17px;
   }
@@ -98,8 +129,7 @@ main {
   }
 }
 
-@media screen and (min-width:992px)
-{
+@media screen and (min-width:992px) {
   .inactive .nav-link::after {
     content: "";
     display: block;
@@ -107,15 +137,15 @@ main {
     height: 2px;
     background: #FFFFFF;
     transition: 0.5s;
-    }
+  }
 
-    .title {
-      display:none;
-    }
+  .title {
+    display: none;
+  }
 }
 
 /*CONTENT*/
-.contentBox{
+.contentBox {
   margin: 80px auto 20px auto;
   background-color: #3C352A;
   width: 90%;
@@ -124,103 +154,124 @@ main {
   box-shadow: 0 4px 10px 0 rgba(0, 0, 0, 0.6), 0 6px 20px 0 rgba(0, 0, 0, 0.3);
 }
 
-.projects h2{
+.projects h2 {
   font-family: 'Quicksand', sans-serif;
+  font-weight: 600;
   font-size: 45px;
-  color:#EDDEA4;
+  color: #EDDEA4;
+  width: 40%;
   text-transform: uppercase;
-  width: 80%;
   margin: 0px auto 30px auto;
   text-align: center;
+
 }
 
-.aboutProjects p{
+.aboutProjects p {
   font-family: 'Quicksand', sans-serif;
   font-size: 18px;
   text-align: left;
-  color:#EDDEA4;
+  color: #EDDEA4;
   margin: 20px 30px;
 }
 
-.horizontalLine{
+.horizontalLine {
   border-bottom: #EDDEA4 solid 2px;
   width: 95%;
-  color:#EDDEA4;
-  margin-bottom: 20px;
-  margin: auto auto;
+  color: #EDDEA4;
+  margin: 5px 30px 20px 30px;
 }
 
-.listOfProjects{
+.listOfProjects {
   padding: 0 40px !important;
 }
 
-.card-deck{
-
-}
-
-.card{
-  background-color:#EDDEA4 !important;
+.card {
+  background-color: #EDDEA4 !important;
   min-width: 224px;
   max-width: 224px;
   margin: 30px auto !important;
 }
 
-.card-columns {
-    @include media-breakpoint-only(lg) {
-      column-count: 4;
-    }
-    @include media-breakpoint-only(xl) {
-      column-count: 5;
-  }
-}
 
-.card-title{
+.card-title {
   font-family: 'Quicksand', sans-serif;
   font-size: 24px;
 }
 
-.card-text{
+.card-text {
   font-family: 'Quicksand', sans-serif;
   font-size: 16px;
 }
 
-.btn{
-  background-color:#3C352A !important;
+.btn {
+  background-color: #3C352A !important;
   border: none;
 }
 
 #projectTitle {
   font-family: 'Quicksand', sans-serif;
-  font-size: 26px;
-  color:#EDDEA4;
+  font-weight: 600;
+  font-size: 30px;
+  color: #EDDEA4;
   display: inline;
   text-transform: uppercase;
-  width: 80%;
   margin: 5px 0;
-  padding: 0 30px;
+  padding: 30px;
 }
 
-#aboutProject{
+.subHeading {
+  font-family: 'Quicksand', sans-serif;
+  font-size: 24px;
+  color: #EDDEA4;
+  display: inline;
+  text-transform: uppercase;
+  margin: 5px 0;
+  padding: 30px;
+}
+
+#aboutProject {
   font-family: 'Quicksand', sans-serif;
   font-size: 18px;
   text-align: left;
   color: white;
-  padding: 30px 30px 10px 30px;
+  padding: 10px 5px 10px 30px;
 }
 
-.projectSections{
-  margin-top: 30px;
+.projectSections {
+  margin: 20px 20px;
 }
+
+.projectSections:after {
+  content: "";
+  display: flex;
+  clear: both;
+}
+
+.projectPhoto {
+  float: left;
+  width: 30%;
+  border: #EDDEA4 solid 3px;
+  border-radius: 10px;
+  margin: 30px;
+}
+
+#project1, #project2, #project3, #project4 {
+  float: left;
+  display: block;
+  width: 60%;
+  margin-top: 25px;
+}
+
 
 /*FOOTER*/
-.footerBox{
+.footerBox {
   background-color: #3C352A;
   width: 100%;
   padding-top: 10px;
   padding-bottom: 10px;
 }
 
-.footerBox{
+.footerBox {
   background-color: #3C352A;
   width: 100%;
   padding-top: 10px;
@@ -247,5 +298,5 @@ main {
 }
 
 .footer li a:hover {
-    color: #FFFFFF;
+  color: #FFFFFF;
 }
