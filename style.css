@@ -585,7 +585,7 @@ main {
 
 .cnp .horizontalLine {
   border-bottom: #EDDEA4 solid 2px;
-  width: 50%;
+  width: 100%;
   color: #EDDEA4;
   margin-bottom: 20px;
 }
