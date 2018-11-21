@@ -34,7 +34,7 @@ main {
   background-color: rgb(60, 53, 42, 0.9);
 }
 
-/*Home page navbar is transparent, without a shadow*/
+/*Navbar in Home page is transparent, without a shadow*/
 .hp #navbarNav {
   background-color: rgb(60, 53, 42, 0);
 }
@@ -208,7 +208,6 @@ main {
   border: #FFFBBD solid 3px;
   box-shadow: 0 4px 3px 0 rgba(0, 0, 0, 0.3);
   -webkit-transition-duration: 0.4s;
-  /* Safari */
   transition-duration: 0.5s;
 }
 
@@ -245,6 +244,7 @@ main {
   clear: both;
 }
 
+/*Main container*/
 .cp .cvBox {
   margin: 80px auto 15px auto;
   background-color: #3C352A;
@@ -354,6 +354,8 @@ main {
 }
 
 /*----------------PROJECT PAGE---------------*/
+
+/*Main container*/
 .pp .contentBox {
   margin: 80px auto 20px auto;
   background-color: #3C352A;
@@ -373,6 +375,7 @@ main {
   text-align: center;
 }
 
+/*Paragraph about project before project cards*/
 .pp .aboutProjects p {
   font-family: 'Quicksand', sans-serif;
   font-size: 18px;
@@ -395,22 +398,25 @@ main {
   margin: 30px auto !important;
 }
 
+ /*card title*/
 .pp .card-title {
   font-family: 'Quicksand', sans-serif;
   font-size: 24px;
 }
 
+/*card text*/
 .pp .card-text {
   font-family: 'Quicksand', sans-serif;
   font-size: 16px;
 }
 
+/*card button*/
 .pp .btn {
   background-color: #3C352A !important;
   border: none;
 }
 
-/*Buttons in the end on every paragraphs about a project*/
+/*Buttons in the end on every paragraph about a project*/
 .pp .projectSections button {
   text-align: center;
   font-size: 18px;
@@ -485,7 +491,7 @@ main {
   margin: 30px;
 }
 
-/*Proect sections*/
+/*Project sections*/
 .pp #project1, #project2, #project3, #project4 {
   float: left;
   display: block;
@@ -532,16 +538,14 @@ main {
 }
 
 /*----------------CONTACT PAGE---------------*/
+
+/*Main container*/
 .cnp .contactBox {
   margin: 80px auto 15px auto;
   background-color: #3C352A;
   width: 90%;
   padding: 30px;
   box-shadow: 0 4px 10px 0 rgba(0, 0, 0, 0.6), 0 6px 20px 0 rgba(0, 0, 0, 0.3);
-}
-
-.cnp .contacts {
-  padding-right: 50px;
 }
 
 /*Contact page title*/
