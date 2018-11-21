@@ -80,7 +80,7 @@ main {
   }
 
   .horizontalLine {
-    width: 90% !important;
+    width: 100% !important;
   }
 
   .collapse {
@@ -89,29 +89,19 @@ main {
 
   #projectTitle {
     margin: 5px 0;
-    padding: 30px;
   }
 
   .subHeading {
     margin: 5px 0;
-    padding: 30px;
-  }
-
-  #aboutProject {
-    padding: 10px 5px 10px 30px;
   }
 
   .projectPhoto {
-    float: left;
     width: 60% !important;
-    margin: 30px;
+    margin: 30px auto 0 auto !important;
   }
 
   #project1, #project2, #project3, #project4 {
-    float: left;
-    display: block;
     width: 100% !important;
-    margin-top: 25px;
   }
 
   .inactive .nav-link {
@@ -142,7 +132,6 @@ main {
   .title {
     display: none;
   }
-
 }
 
 /*CONTENT*/
@@ -150,8 +139,7 @@ main {
   margin: 80px auto 20px auto;
   background-color: #3C352A;
   width: 90%;
-  padding-top: 40px;
-  padding-bottom: 40px;
+  padding: 30px;
   box-shadow: 0 4px 10px 0 rgba(0, 0, 0, 0.6), 0 6px 20px 0 rgba(0, 0, 0, 0.3);
 }
 
@@ -160,9 +148,8 @@ main {
   font-weight: 600;
   font-size: 50px;
   color: #EDDEA4;
-  width: 40%;
   text-transform: uppercase;
-  margin: 0px auto 30px auto;
+  margin: 0 auto 30px auto;
   text-align: center;
 }
 
@@ -171,18 +158,13 @@ main {
   font-size: 18px;
   text-align: left;
   color: #EDDEA4;
-  margin: 20px 30px;
+  margin: 20px 0px;
 }
 
 .horizontalLine {
   border-bottom: #EDDEA4 solid 2px;
-  width: 95%;
+  width: 100%;
   color: #EDDEA4;
-  margin: 5px 30px 20px 30px;
-}
-
-.listOfProjects {
-  padding: 0 40px !important;
 }
 
 .card {
@@ -191,7 +173,6 @@ main {
   max-width: 224px;
   margin: 30px auto !important;
 }
-
 
 .card-title {
   font-family: 'Quicksand', sans-serif;
@@ -231,11 +212,12 @@ main {
 }
 
 .projectSections a{
-  margin: 0 10px;
+  margin-right: 10px;
+  margin-bottom: 10px;
 }
 
 .projectButtons {
-  margin: 0 20px 30px 20px;
+  margin: 20px 0px;
 }
 
 #projectTitle {
@@ -245,8 +227,6 @@ main {
   color: #EDDEA4;
   display: inline;
   text-transform: uppercase;
-  margin: 5px 0;
-  padding: 30px;
 }
 
 .subHeading {
@@ -255,8 +235,6 @@ main {
   color: #EDDEA4;
   display: inline;
   text-transform: uppercase;
-  margin: 5px 0;
-  padding: 30px;
 }
 
 #aboutProject {
@@ -264,11 +242,7 @@ main {
   font-size: 18px;
   text-align: left;
   color: white;
-  padding: 10px 5px 10px 30px;
-}
-
-.projectSections {
-  margin: 20px 20px;
+  padding: 10px 0;
 }
 
 .projectSections:after {
@@ -291,7 +265,6 @@ main {
   width: 60%;
   margin-top: 25px;
 }
-
 
 /*FOOTER*/
 .footerBox {

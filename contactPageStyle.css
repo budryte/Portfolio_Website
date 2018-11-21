@@ -141,8 +141,7 @@ h1 {
   font-size: 50px;
   color: #EDDEA4;
   text-transform: uppercase;
-  width: 50%;
-  margin: 10px auto 30px auto;
+  margin: 0px auto 30px auto;
   text-align: center;
 }
 
@@ -168,7 +167,7 @@ h3 {
   font-size: 20px;
   color: #FFFFFF;
   width: 80%;
-  margin: 10px 0 10px 22px;
+  margin: 10px 0 10px 25px;
 }
 
 .horizontalLine {
