@@ -1,0 +1,616 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+
+html {
+  width: 100%;
+  display: flex;
+}
+
+body {
+  background-color: #EDDEA4;
+  width: 100%;
+  display: flex;
+  min-height: 100vh;
+  flex-direction: column;
+}
+
+main {
+  flex-grow: 1;
+}
+
+/*-------------------NAVBAR---------------------------*/
+.navbar {
+  width: 100%;
+  padding: 0;
+  box-shadow: 0 4px 3px 0 rgba(0, 0, 0, 0.3);
+}
+
+#navbarNav {
+  list-style-type: none;
+  overflow: hidden;
+  width: 100%;
+  background-color: rgb(60, 53, 42, 0.9);
+}
+
+/*Home page navbar is transparent, without a shadow*/
+.hp #navbarNav {
+  background-color: rgb(60, 53, 42, 0);
+}
+
+.hp .navbar {
+  box-shadow: none;
+}
+
+.inactive .nav-link {
+  color: #FFFBBD !important;
+  text-align: center;
+  font-family: 'Quicksand', sans-serif;
+  font-size: 19px;
+  padding: 15px;
+  text-decoration: none;
+  text-transform: uppercase;
+}
+
+.active .nav-link {
+  color: #FFFFFF !important;
+  text-align: center;
+  font-family: 'Quicksand', sans-serif;
+  font-size: 19px;
+  padding: 15px;
+  text-decoration: none;
+  text-transform: uppercase;
+}
+
+.inactive .nav-link:hover::after {
+  width: 100%;
+}
+
+#navbarNav li .nav-link:hover {
+  color: #FFFFFF !important;
+}
+
+/*---------------NAVBAR FOR BIG SCREENS--------------------*/
+@media screen and (min-width:992px) {
+  .inactive .nav-link::after {
+    content: "";
+    display: block;
+    width: 0;
+    height: 2px;
+    background: #FFFFFF;
+    transition: 0.5s;
+  }
+
+  .title {
+    display: none;
+  }
+}
+
+/*-------------NAVBAR FOR SMALL SCREENS------------------*/
+@media screen and (max-width:992px) {
+  .navbar {
+    background-color: rgb(60, 53, 42) !important;
+    max-width: 100vw !important;
+    padding: 8px 14px !important;
+    box-shadow: 0 4px 3px 0 rgba(0, 0, 0, 0.3);
+  }
+
+  .collapse {
+    border-top: #FFFFFF solid 1px;
+  }
+
+  .inactive .nav-link {
+    padding: 10px 0;
+    font-size: 17px;
+  }
+
+  .active .nav-link {
+    padding: 10px 0;
+    font-size: 17px;
+  }
+}
+
+/*-------------------FOOTER---------------------------*/
+.footerBox {
+  background-color: #3C352A;
+  width: 100%;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
+.footer {
+  text-align: center;
+  list-style-type: none;
+  overflow: hidden;
+  margin: auto 0;
+}
+
+.footer li {
+  display: inline-block;
+  position: relative;
+}
+
+.footer li a {
+  display: block;
+  color: #EDDEA4;
+  padding-left: 10px;
+  padding-right: 10px;
+}
+
+.footer li a:hover {
+  color: #FFFFFF;
+}
+
+/*-------------------HOME PAGE--------------------------*/
+.hp html, body {
+  width: 100%;
+  height: 100%;
+}
+
+/* full screen image*/
+.hp header {
+  background-image: url("img/2.png");
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+}
+
+/*text on a full screen image*/
+.hp .content {
+  margin: auto auto;
+  width: 100%;
+}
+
+.hp .text {
+  margin-top: 130px;
+  margin-bottom: 130px;
+}
+
+/*name ant surname*/
+.hp h1 {
+  text-align: center;
+  font-size: 70px;
+  font-family: 'Quicksand', sans-serif;
+  color: #FFFBBD;
+  letter-spacing: 10px;
+  text-decoration: none;
+  text-transform: uppercase;
+  border-bottom: 3px solid #FFFBBD;
+  margin: auto auto;
+  width: 75%;
+}
+
+/*additional text*/
+.hp p {
+  text-align: center;
+  font-size: 30px;
+  font-family: 'Quicksand', sans-serif;
+  color: #FFFBBD;
+  text-decoration: none;
+  text-transform: uppercase;
+}
+
+/* "Get in touch" button */
+.hp .homePageButton button {
+  text-align: center;
+  font-size: 18px;
+  font-family: 'Quicksand', sans-serif;
+  background: none;
+  color: #FFFBBD;
+  text-decoration: none;
+  text-transform: uppercase;
+  width: 150px;
+  height: 50px;
+  border: #FFFBBD solid 3px;
+  box-shadow: 0 4px 3px 0 rgba(0, 0, 0, 0.3);
+  -webkit-transition-duration: 0.4s;
+  /* Safari */
+  transition-duration: 0.5s;
+}
+
+.hp .homePageButton button:hover {
+  background-color: rgb(60, 53, 42, 0.7);
+}
+
+.hp .homePageButton a {
+  margin: auto auto;
+}
+
+.hp .homePageButton {
+  display: flex;
+}
+
+/*RESPONSIVE DESIGN FOR SMALL SCREENS*/
+@media screen and (max-width:992px) {
+  .hp h1 {
+    font-size: 45px !important;
+    border-bottom: 3px solid #FFFBBD;
+    letter-spacing: 0px !important;
+  }
+
+  .hp p {
+    font-size: 20px !important;
+    margin-bottom: 80px !important;
+  }
+}
+
+/*-------------------CV PAGE--------------------------*/
+.cp .cvBox:after {
+  content: "";
+  display: flex;
+  clear: both;
+}
+
+.cp .cvBox {
+  margin: 80px auto 15px auto;
+  background-color: #3C352A;
+  width: 90%;
+  box-shadow: 0 4px 10px 0 rgba(0, 0, 0, 0.6), 0 6px 20px 0 rgba(0, 0, 0, 0.3);
+  padding: 30px;
+}
+
+/* CV page title*/
+.cp .cv h2 {
+  font-family: 'Quicksand', sans-serif;
+  font-weight: 600;
+  font-size: 50px;
+  color: #EDDEA4;
+  text-transform: uppercase;
+  margin: 0 auto;
+  text-align: center;
+}
+
+/*CV page photo*/
+.cp .cvPhoto {
+  float: left;
+  width: 20%;
+  border: #EDDEA4 solid 5px;
+  border-radius: 10px;
+  margin: 40px 50px 0 60px;
+}
+
+.cp .horizontalLine {
+  border-bottom: #EDDEA4 solid 2px;
+  width: 100%;
+  color: #EDDEA4;
+}
+
+/*CV page headings*/
+.cp #headings {
+  font-family: 'Quicksand', sans-serif;
+  font-size: 24px;
+  color: #EDDEA4;
+  display: inline;
+  text-transform: uppercase;
+}
+
+/*CV page paragraphs*/
+.cp #aboutMe {
+  font-family: 'Quicksand', sans-serif;
+  font-size: 18px;
+  text-align: left;
+  color: white;
+  padding: 30px 0px;
+}
+
+/*CV page lists*/
+.cp .lists {
+  list-style-type: none;
+  display: block;
+  margin: 30px 0;
+}
+
+.cp .lists li {
+  text-align: left;
+  font-size: 18px;
+  font-family: 'Quicksand', sans-serif;
+  text-decoration: none;
+  color: white;
+  padding: 3px;
+}
+
+/*RESPONSIVE DESIGN FOR SMALL SCREENS*/
+@media screen and (max-width:992px) {
+  .cp .title {
+    font-family: 'Quicksand', sans-serif;
+    text-transform: uppercase;
+  }
+
+  .cp .cvBox {
+    margin: 70px auto 15px auto !important;
+    width: 100% !important;
+  }
+
+  .cp .photo {
+    text-align: center !important;
+  }
+
+  .cp .cvPhoto {
+    width: 40% !important;
+    float: none !important;
+    margin: 30px auto 0px auto !important;
+  }
+
+  .cp .text {
+    width: 100% !important;
+  }
+
+  .cp .footer li a {
+    padding: 0 5px !important;
+  }
+}
+
+/*RESPONSIVE DESIGN FOR BIG SCREENS*/
+@media screen and (min-width:992px) {
+  .cp .text {
+    float: left;
+    display: block;
+    width: 65%;
+  }
+}
+
+/*----------------PROJECT PAGE---------------*/
+.pp .contentBox {
+  margin: 80px auto 20px auto;
+  background-color: #3C352A;
+  width: 90%;
+  padding: 30px;
+  box-shadow: 0 4px 10px 0 rgba(0, 0, 0, 0.6), 0 6px 20px 0 rgba(0, 0, 0, 0.3);
+}
+
+/*Project page title*/
+.pp .projects h2 {
+  font-family: 'Quicksand', sans-serif;
+  font-weight: 600;
+  font-size: 50px;
+  color: #EDDEA4;
+  text-transform: uppercase;
+  margin: 0 auto 30px auto;
+  text-align: center;
+}
+
+.pp .aboutProjects p {
+  font-family: 'Quicksand', sans-serif;
+  font-size: 18px;
+  text-align: left;
+  color: #EDDEA4;
+  margin: 20px 0px;
+}
+
+.pp .horizontalLine {
+  border-bottom: #EDDEA4 solid 2px;
+  width: 100%;
+  color: #EDDEA4;
+}
+
+/*Project page cards*/
+.pp .card {
+  background-color: #EDDEA4 !important;
+  min-width: 224px;
+  max-width: 224px;
+  margin: 30px auto !important;
+}
+
+.pp .card-title {
+  font-family: 'Quicksand', sans-serif;
+  font-size: 24px;
+}
+
+.pp .card-text {
+  font-family: 'Quicksand', sans-serif;
+  font-size: 16px;
+}
+
+.pp .btn {
+  background-color: #3C352A !important;
+  border: none;
+}
+
+/*Buttons in the end on every paragraphs about a project*/
+.pp .projectSections button {
+  text-align: center;
+  font-size: 18px;
+  font-family: 'Quicksand', sans-serif;
+  background: none;
+  color: #FFFBBD;
+  text-decoration: none;
+  text-transform: uppercase;
+  width: 100px;
+  height: 50px;
+  border: #FFFBBD solid 3px;
+  box-shadow: 0 4px 3px 0 rgba(0, 0, 0, 0.3);
+  -webkit-transition-duration: 0.4s;
+  transition-duration: 0.5s;
+}
+
+.pp .projectSections button:hover {
+  color: rgb(60, 53, 42);
+  font-weight: 600;
+  background-color: #FFFBBD;
+}
+
+.pp .projectSections a {
+  margin-right: 10px;
+  margin-bottom: 10px;
+}
+
+.pp .projectButtons {
+  margin: 20px 0px;
+}
+
+/*Project title*/
+.pp #projectTitle {
+  font-family: 'Quicksand', sans-serif;
+  font-weight: 600;
+  font-size: 30px;
+  color: #EDDEA4;
+  display: inline;
+  text-transform: uppercase;
+}
+
+/*project sub-heading*/
+.pp .subHeading {
+  font-family: 'Quicksand', sans-serif;
+  font-size: 24px;
+  color: #EDDEA4;
+  display: inline;
+  text-transform: uppercase;
+}
+
+/*Paragraph about a project*/
+.pp #aboutProject {
+  font-family: 'Quicksand', sans-serif;
+  font-size: 18px;
+  text-align: left;
+  color: white;
+  padding: 10px 0;
+}
+
+.pp .projectSections:after {
+  content: "";
+  display: flex;
+  clear: both;
+}
+
+/*Project photo*/
+.pp .projectPhoto {
+  float: left;
+  width: 30%;
+  border: #EDDEA4 solid 3px;
+  border-radius: 10px;
+  margin: 30px;
+}
+
+/*Proect sections*/
+.pp #project1, #project2, #project3, #project4 {
+  float: left;
+  display: block;
+  width: 60%;
+  margin-top: 25px;
+}
+
+/*RESPONSIVE DESIGN FOR SMALL SCREENS*/
+@media screen and (max-width:992px) {
+  .pp .contentBox {
+    width: 100% !important;
+    margin: 70px auto 15px auto !important;
+  }
+
+  .pp .title p {
+    font-family: 'Quicksand', sans-serif;
+    text-transform: uppercase;
+  }
+
+  .pp .horizontalLine {
+    width: 100% !important;
+  }
+
+  .pp #projectTitle {
+    margin: 5px 0;
+  }
+
+  .pp .subHeading {
+    margin: 5px 0;
+  }
+
+  .pp .projectPhoto {
+    width: 60% !important;
+    margin: 30px auto 0 auto !important;
+  }
+
+  .pp #project1, #project2, #project3, #project4 {
+    width: 100% !important;
+  }
+
+  .pp .footer li a {
+    padding: 0 5px !important;
+  }
+}
+
+/*----------------CONTACT PAGE---------------*/
+.cnp .contactBox {
+  margin: 80px auto 15px auto;
+  background-color: #3C352A;
+  width: 90%;
+  padding: 30px;
+  box-shadow: 0 4px 10px 0 rgba(0, 0, 0, 0.6), 0 6px 20px 0 rgba(0, 0, 0, 0.3);
+}
+
+.cnp .contacts {
+  padding-right: 50px;
+}
+
+/*Contact page title*/
+.cnp h1 {
+  font-family: 'Quicksand', sans-serif;
+  font-weight: 600;
+  font-size: 50px;
+  color: #EDDEA4;
+  text-transform: uppercase;
+  margin: 0px auto 30px auto;
+  text-align: center;
+}
+
+/*Contact page heading*/
+.cnp h3 {
+  font-family: 'Quicksand', sans-serif;
+  font-size: 30px;
+  color: #EDDEA4;
+  text-transform: uppercase;
+  width: 80%;
+  margin: 5px 0;
+}
+
+/*Icons with a title*/
+.cnp .contacts span {
+  font-family: 'Quicksand', sans-serif;
+  font-size: 20px;
+  color: #FFFFFF;
+  width: 80%;
+  margin: 5px 0;
+}
+
+/*Details under icons*/
+.cnp .contacts p {
+  font-family: 'Quicksand', sans-serif;
+  font-size: 20px;
+  color: #FFFFFF;
+  width: 80%;
+  margin: 10px 0 10px 25px;
+}
+
+.cnp .horizontalLine {
+  border-bottom: #EDDEA4 solid 2px;
+  width: 50%;
+  color: #EDDEA4;
+  margin-bottom: 20px;
+}
+
+/*RESPONSIVE DESIGN FOR SMALL SCREENS*/
+@media screen and (max-width:992px) {
+  .cnp .horizontalLine {
+    width: 100% !important;
+  }
+
+  .cnp .title {
+    font-family: 'Quicksand', sans-serif;
+    text-transform: uppercase;
+  }
+
+  .cnp .contacts p {
+    font-size: 15px !important;
+  }
+
+  .cnp .contactBox {
+    margin: 70px auto 15px auto !important;
+    width: 100% !important;
+  }
+
+  .cnp .footer li a {
+    padding: 0 5px !important;
+  }
+}
