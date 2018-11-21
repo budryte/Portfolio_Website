@@ -105,29 +105,11 @@ main {
   .cvPhoto {
     width: 40% !important;
     float: none !important;
-    border: #EDDEA4 solid 5px;
-    border-radius: 10px;
     margin: 30px auto 0px auto !important;
   }
 
   .text {
-    padding: 10px 20px !important;
-    display: block !important;
     width: 100% !important;
-    float: none !important;
-  }
-
-  .horizontalLine {
-    width: 100% !important;
-  }
-
-  #headings {
-    display: inline;
-    width: 100%;
-  }
-
-  .lists {
-    padding: 0 40px 0 0 !important;
   }
 
   .footer li a {
@@ -150,16 +132,7 @@ main {
     display: none;
   }
 
-  .cvPhoto {
-    float: left;
-    width: 20%;
-    border: #EDDEA4 solid 5px;
-    border-radius: 10px;
-    margin: 60px 30px 0 50px;
-  }
-
   .text {
-    margin: 20px 20px;
     float: left;
     display: block;
     width: 65%;
@@ -179,7 +152,7 @@ main {
   background-color: #3C352A;
   width: 90%;
   box-shadow: 0 4px 10px 0 rgba(0, 0, 0, 0.6), 0 6px 20px 0 rgba(0, 0, 0, 0.3);
-  padding: 20px;
+  padding: 30px;
 }
 
 .cv h2 {
@@ -188,9 +161,16 @@ main {
   font-size: 50px;
   color: #EDDEA4;
   text-transform: uppercase;
-  margin: 20px auto 0 auto;
+  margin: 0 auto;
   text-align: center;
-  width: 30%;
+}
+
+.cvPhoto {
+  float: left;
+  width: 20%;
+  border: #EDDEA4 solid 5px;
+  border-radius: 10px;
+  margin: 40px 50px 0 60px;
 }
 
 .horizontalLine {
@@ -205,8 +185,6 @@ main {
   color: #EDDEA4;
   display: inline;
   text-transform: uppercase;
-  width: 80%;
-  margin: 5px 0;
 }
 
 #aboutMe {
@@ -214,7 +192,7 @@ main {
   font-size: 18px;
   text-align: left;
   color: white;
-  padding: 30px 10px 10px 0px;
+  padding: 30px 0px;
 }
 
 .lists {
@@ -229,7 +207,7 @@ main {
   font-family: 'Quicksand', sans-serif;
   text-decoration: none;
   color: white;
-  padding: 3px 0 3px 0;
+  padding: 3px;
 }
 
 /*FOOTER*/
